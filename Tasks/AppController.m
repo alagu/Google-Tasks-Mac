@@ -34,6 +34,15 @@
 	[statusItem setToolTip:@"Google Tasks for Mac"];
 	//Enables highlighting
 	[statusItem setHighlightMode:YES];
+
+	NSUInteger index = 10;
+	
+	while (index) {
+		NSLog(@"printing index");
+		NSMenuItem *soM = [[NSMenuItem alloc] initWithTitle:@"Hello" action:nil keyEquivalent:@"N"];
+		[statusMenu addItem:soM];
+		index--;
+	}
 }
 
 - (void) dealloc {
