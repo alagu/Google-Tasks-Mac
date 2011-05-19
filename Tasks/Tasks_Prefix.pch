@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Tasks' target in the 'Tasks' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

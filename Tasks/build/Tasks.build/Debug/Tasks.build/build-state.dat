@@ -1,0 +1,288 @@
+TTasks
+v7
+r0
+t327517403.811340
+cCheck dependencies
+cProcessInfoPlistFile /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Info.plist Tasks-Info.plist
+cCopyStringsFile /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Users/alagu/Code/OsX/Tasks/Tasks/English.lproj/MainMenu.xib
+cCpResource build/Debug/Tasks.app/Contents/Resources/icon-alt.png ../../../../Downloads/tasks/icon-alt.png
+cCpResource build/Debug/Tasks.app/Contents/Resources/icon.png ../../../../Downloads/tasks/icon.png
+cProcessPCH /var/folders/tv/tvWCDFPWH2yPpJA-xXazUk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Tasks_Prefix-eorraanveexbxagiccuqepwhtmxr/Tasks_Prefix.pch.gch Tasks_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/main.o /Users/alagu/Code/OsX/Tasks/Tasks/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/TasksAppDelegate.o /Users/alagu/Code/OsX/Tasks/Tasks/TasksAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/AppController.o /Users/alagu/Code/OsX/Tasks/Tasks/AppController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/MacOS/Tasks normal x86_64
+cTouch /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004CAA740B00000000000000EE
+t1286239243
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/../../../../Downloads/tasks/checkmark-alt.png
+c000000004DCC225F0000000000000641
+t1305223775
+s1601
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/../../../../Downloads/tasks/checkmark.png
+c000000004DCC225F0000000000000641
+t1305223775
+s1601
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/../../../../Downloads/tasks/icon-alt.png
+c000000004DCC225F0000000000000641
+t1305223775
+s1601
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/../../../../Downloads/tasks/icon.png
+c000000004DCC225F0000000000000641
+t1305223775
+s1601
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/AppController.h
+c000000004DCDF0280000000000000230
+t1305341992
+s560
+i<Cocoa/Cocoa.h>
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/AppController.m
+c000000004DD54D590000000000000524
+t1305824601
+s1316
+i"AppController.h"
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/English.lproj/InfoPlist.strings
+c000000004DCC2031000000000000002D
+t1305223217
+s45
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/English.lproj/MainMenu.xib
+c000000004DCCB082000000000000751E
+t1305260162
+s29982
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/TasksAppDelegate.h
+c000000004DCC2031000000000000012F
+t1305223217
+s303
+i<Cocoa/Cocoa.h>
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/TasksAppDelegate.m
+c000000004DCC20310000000000000162
+t1305223217
+s354
+i"TasksAppDelegate.h"
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/Tasks_Prefix.pch
+c000000004DCC2031000000000000008D
+t1305223217
+s141
+i<Cocoa/Cocoa.h>
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app
+t1305824603
+s102
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Info.plist
+t1305258234
+s913
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/MacOS/Tasks
+t1305824603
+s16520
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/PkgInfo
+t1305258234
+s8
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1305258056
+s92
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources/English.lproj/MainMenu.nib
+t1305260169
+s2901
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources/checkmark-alt.png
+t2
+s0
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources/checkmark.png
+t2
+s0
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources/icon-alt.png
+t1305258056
+s1601
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources/icon.png
+t1305258056
+s1601
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/AppController.o
+t1305824603
+s21408
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/Tasks.LinkFileList
+c000000004DCCA847000000000000013E
+t1305258055
+s318
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/TasksAppDelegate.o
+t1305258061
+s21040
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/main.o
+t1305258061
+s4976
+
+N/Users/alagu/Code/OsX/Tasks/Tasks/main.m
+c000000004DCC203100000000000000F5
+t1305223217
+s245
+i<Cocoa/Cocoa.h>
+
+N/var/folders/tv/tvWCDFPWH2yPpJA-xXazUk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Tasks_Prefix-eorraanveexbxagiccuqepwhtmxr/Tasks_Prefix.pch.gch
+t1305258061
+s54306576
+
+NTasks-Info.plist
+c000000004DCCA8F9000000000000040B
+t1305258233
+s1035
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies327517403#327517403#0(0"0(0#1#0"8611251360#0"0#
+
+CCompileC build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/AppController.o /Users/alagu/Code/OsX/Tasks/Tasks/AppController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s327517403.654507
+e327517403.775944
+r1
+xCompileC
+xbuild/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/AppController.o
+x/Users/alagu/Code/OsX/Tasks/Tasks/AppController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/alagu/Code/OsX/Tasks/Tasks/AppController.m327517403#327517403#0(0"0(0#0#49"/Users/alagu/Code/OsX/Tasks/Tasks/AppController.m8610470720#1373"    cd /Users/alagu/Code/OsX/Tasks/Tasks    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-generated-files.hmap -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-own-target-headers.hmap -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-all-target-headers.hmap -iquote /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-project-headers.hmap -F/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/include -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/DerivedSources/x86_64 -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/DerivedSources -include /var/folders/tv/tvWCDFPWH2yPpJA-xXazUk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Tasks_Prefix-eorraanveexbxagiccuqepwhtmxr/Tasks_Prefix.pch -c /Users/alagu/Code/OsX/Tasks/Tasks/AppController.m -o /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/AppController.o0#
+
+CCompileC build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/TasksAppDelegate.o /Users/alagu/Code/OsX/Tasks/Tasks/TasksAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s326950861.630043
+e326950861.859702
+r1
+xCompileC
+xbuild/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/TasksAppDelegate.o
+x/Users/alagu/Code/OsX/Tasks/Tasks/TasksAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/alagu/Code/OsX/Tasks/Tasks/TasksAppDelegate.m326950861#326950861#0(0"0(0#0#52"/Users/alagu/Code/OsX/Tasks/Tasks/TasksAppDelegate.m8602622528#1379"    cd /Users/alagu/Code/OsX/Tasks/Tasks    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-generated-files.hmap -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-own-target-headers.hmap -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-all-target-headers.hmap -iquote /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-project-headers.hmap -F/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/include -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/DerivedSources/x86_64 -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/DerivedSources -include /var/folders/tv/tvWCDFPWH2yPpJA-xXazUk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Tasks_Prefix-eorraanveexbxagiccuqepwhtmxr/Tasks_Prefix.pch -c /Users/alagu/Code/OsX/Tasks/Tasks/TasksAppDelegate.m -o /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/TasksAppDelegate.o0#
+
+CCompileC build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/main.o /Users/alagu/Code/OsX/Tasks/Tasks/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s326950861.629196
+e326950861.859967
+r1
+xCompileC
+xbuild/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/main.o
+x/Users/alagu/Code/OsX/Tasks/Tasks/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@48"Compile /Users/alagu/Code/OsX/Tasks/Tasks/main.m326950861#326950861#0(0"0(0#0#40"/Users/alagu/Code/OsX/Tasks/Tasks/main.m8613372448#1355"    cd /Users/alagu/Code/OsX/Tasks/Tasks    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-generated-files.hmap -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-own-target-headers.hmap -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-all-target-headers.hmap -iquote /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-project-headers.hmap -F/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/include -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/DerivedSources/x86_64 -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/DerivedSources -include /var/folders/tv/tvWCDFPWH2yPpJA-xXazUk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Tasks_Prefix-eorraanveexbxagiccuqepwhtmxr/Tasks_Prefix.pch -c /Users/alagu/Code/OsX/Tasks/Tasks/main.m -o /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/main.o0#
+
+CCompileXIB /Users/alagu/Code/OsX/Tasks/Tasks/English.lproj/MainMenu.xib
+s326952969.052563
+e326952969.197503
+r1
+xCompileXIB
+x/Users/alagu/Code/OsX/Tasks/Tasks/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib326952969#326952969#0(0"0(0#0#60"/Users/alagu/Code/OsX/Tasks/Tasks/English.lproj/MainMenu.xib8611469312#347"    cd /Users/alagu/Code/OsX/Tasks/Tasks    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources/English.lproj/MainMenu.nib /Users/alagu/Code/OsX/Tasks/Tasks/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCopyStringsFile /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s326950855.949700
+e326950856.185145
+r1
+xCopyStringsFile
+x/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings326950855#326950856#0(0"0(0#0#65"/Users/alagu/Code/OsX/Tasks/Tasks/English.lproj/InfoPlist.strings8613500768#353"    cd /Users/alagu/Code/OsX/Tasks/Tasks    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources/English.lproj0#
+
+CCpResource build/Debug/Tasks.app/Contents/Resources/checkmark-alt.png ../../../../Downloads/tasks/checkmark-alt.png
+r0
+
+CCpResource build/Debug/Tasks.app/Contents/Resources/checkmark.png ../../../../Downloads/tasks/checkmark.png
+r0
+
+CCpResource build/Debug/Tasks.app/Contents/Resources/icon-alt.png ../../../../Downloads/tasks/icon-alt.png
+s326950855.951875
+e326950856.018381
+r1
+xCpResource
+xbuild/Debug/Tasks.app/Contents/Resources/icon-alt.png
+x../../../../Downloads/tasks/icon-alt.png
+lSLF07#2@45"Copy ../../../../Downloads/tasks/icon-alt.png326950855#326950856#0(0"0(0#0#74"/Users/alagu/Code/OsX/Tasks/Tasks/../../../../Downloads/tasks/icon-alt.png8613250560#353"    cd /Users/alagu/Code/OsX/Tasks/Tasks    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/alagu/Code/OsX/Tasks/Tasks/../../../../Downloads/tasks/icon-alt.png /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources0#
+
+CCpResource build/Debug/Tasks.app/Contents/Resources/icon.png ../../../../Downloads/tasks/icon.png
+s326950855.952508
+e326950856.018518
+r1
+xCpResource
+xbuild/Debug/Tasks.app/Contents/Resources/icon.png
+x../../../../Downloads/tasks/icon.png
+lSLF07#2@41"Copy ../../../../Downloads/tasks/icon.png326950855#326950856#0(0"0(0#0#70"/Users/alagu/Code/OsX/Tasks/Tasks/../../../../Downloads/tasks/icon.png8612757344#349"    cd /Users/alagu/Code/OsX/Tasks/Tasks    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/alagu/Code/OsX/Tasks/Tasks/../../../../Downloads/tasks/icon.png /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Resources0#
+
+CLd /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/MacOS/Tasks normal x86_64
+s327517403.776038
+e327517403.808388
+r1
+xLd
+x/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/MacOS/Tasks
+xnormal
+xx86_64
+lSLF07#2@81"Link /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/MacOS/Tasks327517403#327517403#0(0"0(0#0#0"8620846336#507"    cd /Users/alagu/Code/OsX/Tasks/Tasks    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug -F/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug -filelist /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Objects-normal/x86_64/Tasks.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/MacOS/Tasks0#
+
+CProcessInfoPlistFile /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Info.plist Tasks-Info.plist
+s326951034.451014
+e326951034.457416
+r1
+xProcessInfoPlistFile
+x/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Info.plist
+xTasks-Info.plist
+lSLF07#2@24"Process Tasks-Info.plist326951034#326951034#0(0"0(0#0#50"/Users/alagu/Code/OsX/Tasks/Tasks/Tasks-Info.plist8612183296#289"    cd /Users/alagu/Code/OsX/Tasks/Tasks    builtin-infoPlistUtility Tasks-Info.plist -genpkginfo /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/tv/tvWCDFPWH2yPpJA-xXazUk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Tasks_Prefix-eorraanveexbxagiccuqepwhtmxr/Tasks_Prefix.pch.gch Tasks_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s326950856.185451
+e326950861.628989
+r1
+xProcessPCH
+x/var/folders/tv/tvWCDFPWH2yPpJA-xXazUk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Tasks_Prefix-eorraanveexbxagiccuqepwhtmxr/Tasks_Prefix.pch.gch
+xTasks_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@27"Precompile Tasks_Prefix.pch326950856#326950861#0(0"0(0#0#50"/Users/alagu/Code/OsX/Tasks/Tasks/Tasks_Prefix.pch8615516960#1268"    cd /Users/alagu/Code/OsX/Tasks/Tasks    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-generated-files.hmap -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-own-target-headers.hmap -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-all-target-headers.hmap -iquote /Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/Tasks-project-headers.hmap -F/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/include -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/DerivedSources/x86_64 -I/Users/alagu/Code/OsX/Tasks/Tasks/build/Tasks.build/Debug/Tasks.build/DerivedSources -c /Users/alagu/Code/OsX/Tasks/Tasks/Tasks_Prefix.pch -o /var/folders/tv/tvWCDFPWH2yPpJA-xXazUk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Tasks_Prefix-eorraanveexbxagiccuqepwhtmxr/Tasks_Prefix.pch.gch0#
+
+CTouch /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app
+s327517403.808472
+e327517403.811302
+r1
+xTouch
+x/Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app
+lSLF07#2@61"Touch /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app327517403#327517403#0(0"0(0#0#0"8617583264#119"    cd /Users/alagu/Code/OsX/Tasks/Tasks    /usr/bin/touch -c /Users/alagu/Code/OsX/Tasks/Tasks/build/Debug/Tasks.app0#
+
