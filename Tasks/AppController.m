@@ -7,6 +7,7 @@
 //
 
 #import "AppController.h"
+#import "SBJson.h"
 
 
 @implementation AppController
@@ -21,7 +22,7 @@
 	
 	//Allocates and loads the images into the application which will be used for our NSStatusItem
 	statusImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon" ofType:@"png"]];
-	statusHighlightImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon-alt" ofType:@"png"]];
+	statusHighlightImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon" ofType:@"png"]];
 	
 	//Sets the images in our NSStatusItem
 	[statusItem setImage:statusImage];
@@ -37,12 +38,44 @@
 
 	NSUInteger index = 10;
 	
-	while (index) {
-		NSLog(@"printing index");
-		NSMenuItem *soM = [[NSMenuItem alloc] initWithTitle:@"Hello" action:nil keyEquivalent:@"N"];
+	NSString *taskURL = @"https://www.googleapis.com/tasks/v1/lists/MTUzNjI2MjQ0OTYzNTc0OTE0Mjk6MDow/tasks?access_token=<configure_from_oauth>";
+	
+	NSURLRequest *theRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:taskURL]];
+	NSURLResponse *resp = nil;
+	NSError *err = nil;
+	NSData *response = [NSURLConnection sendSynchronousRequest: theRequest returningResponse: &resp error: &err];
+	NSString * tasksString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]; 
+	
+	SBJsonParser *parser = [[SBJsonParser alloc] init];
+	
+	NSDictionary *responseObj = [parser objectWithString:tasksString];
+	
+	
+	NSArray *tasks = [responseObj objectForKey:@"items"];
+	
+	while (index && FALSE) {
+		NSMenuItem *soM = [[NSMenuItem alloc] initWithTitle:@"Hello" action:@selector(helloWorld:) keyEquivalent:@""];
 		[statusMenu addItem:soM];
+		[soM setTarget:self];
+		[soM setEnabled:NO];
+		[soM setState:NO];
 		index--;
 	}
+	
+	for (NSDictionary *task in tasks)
+	{
+		NSString *parent = [task objectForKey:@"parent"];
+		
+		if (parent == NULL)
+		{
+			NSMenuItem *soM = [[NSMenuItem alloc] initWithTitle:[task objectForKey:@"title"] action:@selector(helloWorld:) keyEquivalent:@""];
+			[statusMenu addItem:soM];
+			[soM setTarget:self];
+			[soM setEnabled:NO];
+			[soM setState:NO];
+		}
+	}
+	
 }
 
 - (void) dealloc {
