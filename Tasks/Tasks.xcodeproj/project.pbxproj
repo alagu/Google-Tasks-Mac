@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		2311AA91137C57D5000C4A0A /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2311AA90137C57D5000C4A0A /* AppController.m */; };
-		2311AA94137CCCC6000C4A0A /* icon-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2311AA92137CCCC6000C4A0A /* icon-alt.png */; };
-		2311AA95137CCCC6000C4A0A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2311AA93137CCCC6000C4A0A /* icon.png */; };
+		2383952D13F85363004C6D32 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2383952B13F85363004C6D32 /* icon.png */; };
 		256AC3DA0F4B6AC300CF3369 /* TasksAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TasksAppDelegate.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -24,8 +23,7 @@
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2311AA8F137C57D5000C4A0A /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		2311AA90137C57D5000C4A0A /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		2311AA92137CCCC6000C4A0A /* icon-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-alt.png"; path = "../../../../Downloads/tasks/icon-alt.png"; sourceTree = SOURCE_ROOT; };
-		2311AA93137CCCC6000C4A0A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../../Downloads/tasks/icon.png; sourceTree = SOURCE_ROOT; };
+		2383952B13F85363004C6D32 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		256AC3D80F4B6AC300CF3369 /* TasksAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksAppDelegate.h; sourceTree = "<group>"; };
 		256AC3D90F4B6AC300CF3369 /* TasksAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksAppDelegate.m; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* Tasks_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks_Prefix.pch; sourceTree = "<group>"; };
@@ -86,8 +84,7 @@
 		29B97314FDCFA39411CA2CEA /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				2311AA92137CCCC6000C4A0A /* icon-alt.png */,
-				2311AA93137CCCC6000C4A0A /* icon.png */,
+				2383952B13F85363004C6D32 /* icon.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -179,8 +176,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				2311AA94137CCCC6000C4A0A /* icon-alt.png in Resources */,
-				2311AA95137CCCC6000C4A0A /* icon.png in Resources */,
+				2383952D13F85363004C6D32 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
