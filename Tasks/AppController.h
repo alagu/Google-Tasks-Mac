@@ -27,6 +27,6 @@
 - (void) saveDataToDisk;
 - (void) loadDataFromDisk;
 - (void) setUserPref:(NSMutableDictionary *)newUserPref;
-- (IBAction)helloWorld:(id)sender;
+- (IBAction)toggleTaskState:(id)sender;
 
 @end

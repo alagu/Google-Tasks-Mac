@@ -70,7 +70,7 @@
 		
 		if (parent == NULL)
 		{
-			NSMenuItem *soM = [[NSMenuItem alloc] initWithTitle:[task objectForKey:@"title"] action:@selector(helloWorld:) keyEquivalent:@""];
+			NSMenuItem *soM = [[NSMenuItem alloc] initWithTitle:[task objectForKey:@"title"] action:@selector(toggleTaskState:) keyEquivalent:@""];
 			[soM setTarget:self];
 			[statusMenu addItem:soM];
 			index++;
@@ -140,7 +140,15 @@
     }
 }
 
--(IBAction)helloWorld:(id)sender{
+-(IBAction)toggleTaskState:(id)sender{
+	if([sender state] == NSOnState)
+	{
+		[sender setState:NSOffState];
+	}
+	else {
+		[sender setState:NSOnState];
+	}
+
 	NSLog(@"Hello there!");
 }
 @end
