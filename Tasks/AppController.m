@@ -20,7 +20,7 @@
     }
 	
 	[self loadDataFromDisk];
-	[_userPrefs setObject:@"<dummy_access_token>" forKey:@"access_token"];
+	[_userPrefs setObject:@"custom_token" forKey:@"access_token"];
 	[self saveDataToDisk];
 	
 	//Create the NSStatusBar and set its length
@@ -46,7 +46,7 @@
 	[statusItem setHighlightMode:YES];
 
 	
-	NSString *taskURL = @"https://www.googleapis.com/tasks/v1/lists/MTUzNjI2MjQ0OTYzNTc0OTE0Mjk6MDow/tasks?access_token=<configure_from_oauth>";
+	NSString *taskURL = @"https://www.googleapis.com/tasks/v1/lists/MTUzNjI2MjQ0OTYzNTc0OTE0Mjk6MDow/tasks?access_token=custom_token";
 	
 	NSURLRequest *theRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:taskURL]];
 	NSURLResponse *resp = nil;
@@ -71,6 +71,7 @@
 		if (parent == NULL)
 		{
 			NSMenuItem *soM = [[NSMenuItem alloc] initWithTitle:[task objectForKey:@"title"] action:@selector(helloWorld:) keyEquivalent:@""];
+			[soM setTarget:self];
 			[statusMenu addItem:soM];
 			index++;
 		}
@@ -139,8 +140,7 @@
     }
 }
 
-- (IBAction) helloWorld
-{
-	NSLog(@"Hello world");
+-(IBAction)helloWorld:(id)sender{
+	NSLog(@"Hello there!");
 }
 @end
