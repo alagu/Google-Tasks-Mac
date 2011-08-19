@@ -22,11 +22,11 @@
 	
 	NSMutableDictionary * _userPrefs;
 }
-- (IBAction) helloWorld;
+
 - (NSString *) pathForDataFile;
 - (void) saveDataToDisk;
 - (void) loadDataFromDisk;
 - (void) setUserPref:(NSMutableDictionary *)newUserPref;
-
+- (IBAction)helloWorld:(id)sender;
 
 @end
