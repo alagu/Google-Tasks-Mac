@@ -20,6 +20,7 @@
 		2319663613F8F50C00928A7B /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319662913F8F50C00928A7B /* SBJsonTokeniser.m */; };
 		2319663713F8F50C00928A7B /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319662B13F8F50C00928A7B /* SBJsonUTF8Stream.m */; };
 		2319663813F8F50C00928A7B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319662D13F8F50C00928A7B /* SBJsonWriter.m */; };
+		237F6BD913FE029300930CA9 /* UserPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F6BD813FE029300930CA9 /* UserPrefs.m */; };
 		2383952D13F85363004C6D32 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2383952B13F85363004C6D32 /* icon.png */; };
 		256AC3DA0F4B6AC300CF3369 /* TasksAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TasksAppDelegate.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -57,6 +58,8 @@
 		2319662B13F8F50C00928A7B /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		2319662C13F8F50C00928A7B /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		2319662D13F8F50C00928A7B /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		237F6BD713FE029300930CA9 /* UserPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPrefs.h; sourceTree = "<group>"; };
+		237F6BD813FE029300930CA9 /* UserPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPrefs.m; sourceTree = "<group>"; };
 		2383952B13F85363004C6D32 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		256AC3D80F4B6AC300CF3369 /* TasksAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksAppDelegate.h; sourceTree = "<group>"; };
 		256AC3D90F4B6AC300CF3369 /* TasksAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksAppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				2319661613F8F50C00928A7B /* Classes */,
 				256AC3D80F4B6AC300CF3369 /* TasksAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* TasksAppDelegate.m */,
+				237F6BD713FE029300930CA9 /* UserPrefs.h */,
+				237F6BD813FE029300930CA9 /* UserPrefs.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				2319663613F8F50C00928A7B /* SBJsonTokeniser.m in Sources */,
 				2319663713F8F50C00928A7B /* SBJsonUTF8Stream.m in Sources */,
 				2319663813F8F50C00928A7B /* SBJsonWriter.m in Sources */,
+				237F6BD913FE029300930CA9 /* UserPrefs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
