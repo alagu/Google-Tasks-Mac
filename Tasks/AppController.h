@@ -19,9 +19,14 @@
 	NSImage *statusImage;
 	NSImage *statusHighlightImage;
 	NSMenuItem *menuItem;
-}
 	
-/* Our IBAction which will call the helloWorld method when our connected Menu Item is pressed */
--(IBAction)helloWorld:(id)sender;
+	NSMutableDictionary * _userPrefs;
+}
+- (IBAction) helloWorld;
+- (NSString *) pathForDataFile;
+- (void) saveDataToDisk;
+- (void) loadDataFromDisk;
+- (void) setUserPref:(NSMutableDictionary *)newUserPref;
+
 
 @end

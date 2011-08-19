@@ -14,6 +14,15 @@
 
 - (void) awakeFromNib{
 	
+	if (self = [super init])
+    {
+        _userPrefs = [[NSMutableDictionary alloc] init];
+    }
+	
+	[self loadDataFromDisk];
+	[_userPrefs setObject:@"<dummy_access_token>" forKey:@"access_token"];
+	[self saveDataToDisk];
+	
 	//Create the NSStatusBar and set its length
 	statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength] retain];
 	
@@ -36,7 +45,6 @@
 	//Enables highlighting
 	[statusItem setHighlightMode:YES];
 
-	NSUInteger index = 10;
 	
 	NSString *taskURL = @"https://www.googleapis.com/tasks/v1/lists/MTUzNjI2MjQ0OTYzNTc0OTE0Mjk6MDow/tasks?access_token=<configure_from_oauth>";
 	
@@ -52,16 +60,10 @@
 	
 	
 	NSArray *tasks = [responseObj objectForKey:@"items"];
+
 	
-	while (index && FALSE) {
-		NSMenuItem *soM = [[NSMenuItem alloc] initWithTitle:@"Hello" action:@selector(helloWorld:) keyEquivalent:@""];
-		[statusMenu addItem:soM];
-		[soM setTarget:self];
-		[soM setEnabled:NO];
-		[soM setState:NO];
-		index--;
-	}
-	
+	NSUInteger index = 1;
+
 	for (NSDictionary *task in tasks)
 	{
 		NSString *parent = [task objectForKey:@"parent"];
@@ -70,13 +72,35 @@
 		{
 			NSMenuItem *soM = [[NSMenuItem alloc] initWithTitle:[task objectForKey:@"title"] action:@selector(helloWorld:) keyEquivalent:@""];
 			[statusMenu addItem:soM];
-			[soM setTarget:self];
-			[soM setEnabled:NO];
-			[soM setState:NO];
+			index++;
 		}
 	}
 	
 }
+
+
+- (NSMutableDictionary *) userPrefs
+{
+    return _userPrefs;
+}
+
+
+- (NSString *) pathForDataFile
+{
+    NSFileManager *fileManager= [NSFileManager defaultManager];
+	
+    NSString *folder = @"~/Library/Application Support/Google Tasks Mac/";
+    folder = [folder stringByExpandingTildeInPath];
+    
+	if ([fileManager fileExistsAtPath: folder] == NO)
+    {
+        [fileManager createDirectoryAtPath:folder attributes:nil];
+    }
+    
+    NSString *fileName = @"Google_Tasks_Mac.plist";
+    return [folder stringByAppendingPathComponent: fileName];
+}
+
 
 - (void) dealloc {
 	//Releases the 2 images we loaded into memory
@@ -85,7 +109,38 @@
 	[super dealloc];
 }
 
--(IBAction)helloWorld:(id)sender{
-	NSLog(@"Hello there!");
+- (void) saveDataToDisk
+{
+    NSString * path = [self pathForDataFile];
+	
+    NSMutableDictionary * rootObject;
+    rootObject = [NSMutableDictionary dictionary];
+    
+    [rootObject setValue:_userPrefs forKey:@"userprefs"];
+    [NSKeyedArchiver archiveRootObject: rootObject toFile: path];
+}
+
+- (void) loadDataFromDisk
+{
+    NSString     * path         = [self pathForDataFile];
+    NSDictionary * rootObject;
+    
+    rootObject = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    [self setUserPref:[rootObject valueForKey:@"userprefs"]];
+}
+
+
+- (void) setUserPref: (NSMutableDictionary *)newUserPref
+{
+    if (_userPrefs != newUserPref)
+    {
+        [_userPrefs autorelease];
+        _userPrefs	= [[NSMutableDictionary alloc] initWithDictionary:newUserPref];
+    }
+}
+
+- (IBAction) helloWorld
+{
+	NSLog(@"Hello world");
 }
 @end
