@@ -20,6 +20,7 @@
 		2319663613F8F50C00928A7B /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319662913F8F50C00928A7B /* SBJsonTokeniser.m */; };
 		2319663713F8F50C00928A7B /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319662B13F8F50C00928A7B /* SBJsonUTF8Stream.m */; };
 		2319663813F8F50C00928A7B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319662D13F8F50C00928A7B /* SBJsonWriter.m */; };
+		236B075D14020BAC00184C7A /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236B075C14020BAC00184C7A /* Preferences.xib */; };
 		237F6BD913FE029300930CA9 /* UserPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F6BD813FE029300930CA9 /* UserPrefs.m */; };
 		2383952D13F85363004C6D32 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2383952B13F85363004C6D32 /* icon.png */; };
 		256AC3DA0F4B6AC300CF3369 /* TasksAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TasksAppDelegate.m */; };
@@ -58,6 +59,7 @@
 		2319662B13F8F50C00928A7B /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		2319662C13F8F50C00928A7B /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		2319662D13F8F50C00928A7B /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		236B075C14020BAC00184C7A /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		237F6BD713FE029300930CA9 /* UserPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPrefs.h; sourceTree = "<group>"; };
 		237F6BD813FE029300930CA9 /* UserPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPrefs.m; sourceTree = "<group>"; };
 		2383952B13F85363004C6D32 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -161,8 +163,8 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				2311AA8F137C57D5000C4A0A /* AppController.h */,
 				2311AA90137C57D5000C4A0A /* AppController.m */,
+				2311AA8F137C57D5000C4A0A /* AppController.h */,
 			);
 			name = Tasks;
 			sourceTree = "<group>";
@@ -182,6 +184,7 @@
 				8D1107310486CEB800E47090 /* Tasks-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				236B075C14020BAC00184C7A /* Preferences.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				2383952D13F85363004C6D32 /* icon.png in Resources */,
+				236B075D14020BAC00184C7A /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
