@@ -77,6 +77,15 @@
 		}
 	}
 	
+	NSMenuItem *clearCompleted = [[NSMenuItem alloc] initWithTitle:@"Clear completed" action:@selector(clearCompleted:) keyEquivalent:@""];
+	[clearCompleted setTarget:self];
+	[statusMenu	addItem:clearCompleted];
+	
+	NSMenuItem *prefs = [[NSMenuItem alloc] initWithTitle:@"Preferences" action:@selector(setPreferences:) keyEquivalent:@""];
+	[prefs setTarget:self];
+	[statusMenu	addItem:prefs];
+	
+	
 }
 
 
@@ -148,7 +157,16 @@
 	else {
 		[sender setState:NSOnState];
 	}
+}
 
-	NSLog(@"Hello there!");
+-(IBAction)clearCompleted:(id)sender{
+	
+	NSLog(@"This should clear up completed tasks");
+	
+}
+
+
+-(IBAction)setPreferences:(id)sender{
+	NSLog(@"This should open up preferences dialog");
 }
 @end

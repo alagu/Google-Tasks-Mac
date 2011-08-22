@@ -28,5 +28,8 @@
 - (void) loadDataFromDisk;
 - (void) setUserPref:(NSMutableDictionary *)newUserPref;
 - (IBAction)toggleTaskState:(id)sender;
+- (IBAction)clearCompleted:(id)sender;
+- (IBAction)setPreferences:(id)sender;
+
 
 @end
