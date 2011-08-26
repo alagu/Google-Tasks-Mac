@@ -14,6 +14,11 @@
 	/* Our outlets which allow us to access the interface */
 	IBOutlet NSMenu *statusMenu;
 	
+	/* Preferences Outlet */
+	IBOutlet NSFormCell *accessToken;
+	IBOutlet NSFormCell *refreshToken;
+	IBOutlet NSWindow   *preferencesWindow;
+	
 	/* The other stuff :P */
 	NSStatusItem *statusItem;
 	NSImage *statusImage;

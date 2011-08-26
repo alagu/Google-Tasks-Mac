@@ -160,13 +160,16 @@
 }
 
 -(IBAction)clearCompleted:(id)sender{
-	
 	NSLog(@"This should clear up completed tasks");
 	
 }
 
 
 -(IBAction)setPreferences:(id)sender{
+	NSWindowController *controller = [NSWindowController alloc];
+	[controller initWithWindow:preferencesWindow];
+	[controller showWindow:self];
+	
 	NSLog(@"This should open up preferences dialog");
 }
 @end
