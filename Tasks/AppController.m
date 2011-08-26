@@ -63,6 +63,11 @@
 
 	
 	NSUInteger index = 1;
+	
+	NSMenuItem *addMenu = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(toggleTaskState:) keyEquivalent:@""];
+	[addMenu setView:addTask];
+	[addMenu setTarget:self];
+	[statusMenu addItem:addMenu];
 
 	for (NSDictionary *task in tasks)
 	{

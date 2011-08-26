@@ -13,6 +13,8 @@
 @interface AppController : NSObject {
 	/* Our outlets which allow us to access the interface */
 	IBOutlet NSMenu *statusMenu;
+	IBOutlet NSView *addTask;
+	IBOutlet NSTextField *addTaskText;
 	
 	/* Preferences Outlet */
 	IBOutlet NSFormCell *accessToken;
