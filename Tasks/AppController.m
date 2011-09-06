@@ -20,8 +20,6 @@
     }
 	
 	[self loadDataFromDisk];
-	[_userPrefs setObject:@"custom_token" forKey:@"access_token"];
-	[self saveDataToDisk];
 	
 	//Create the NSStatusBar and set its length
 	statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength] retain];
@@ -45,21 +43,7 @@
 	//Enables highlighting
 	[statusItem setHighlightMode:YES];
 
-	
-	NSString *taskURL = @"https://www.googleapis.com/tasks/v1/lists/MTUzNjI2MjQ0OTYzNTc0OTE0Mjk6MDow/tasks?access_token=custom_token";
-	
-	NSURLRequest *theRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:taskURL]];
-	NSURLResponse *resp = nil;
-	NSError *err = nil;
-	NSData *response = [NSURLConnection sendSynchronousRequest: theRequest returningResponse: &resp error: &err];
-	NSString * tasksString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]; 
-	
-	SBJsonParser *parser = [[SBJsonParser alloc] init];
-	
-	NSDictionary *responseObj = [parser objectWithString:tasksString];
-	
-	
-	NSArray *tasks = [responseObj objectForKey:@"items"];
+	NSArray *tasks = [self fetchTasks];
 
 	
 	NSUInteger index = 1;
@@ -116,6 +100,27 @@
     return [folder stringByAppendingPathComponent: fileName];
 }
 
+- (NSArray *) fetchTasks {
+	NSString *access_token = [self getAccessToken];
+	NSString *taskURLPrefix = @"https://www.googleapis.com/tasks/v1/lists/MTUzNjI2MjQ0OTYzNTc0OTE0Mjk6MDow/tasks?access_token=";
+	NSString *taskURL = [taskURLPrefix stringByAppendingString:access_token];
+	NSLog(taskURL);
+	
+	NSURLRequest *theRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:taskURL]];
+	NSURLResponse *resp = nil;
+	NSError *err = nil;
+	NSData *response = [NSURLConnection sendSynchronousRequest: theRequest returningResponse: &resp error: &err];
+	NSString * tasksString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]; 
+	
+	SBJsonParser *parser = [[SBJsonParser alloc] init];
+	
+	NSDictionary *responseObj = [parser objectWithString:tasksString];
+	NSObject *error = [responseObj objectForKey:@"error"];
+	BOOL isError = [error count] > 0;
+	
+	
+	return [responseObj objectForKey:@"items"];
+}
 
 - (void) dealloc {
 	//Releases the 2 images we loaded into memory
@@ -164,6 +169,15 @@
 	}
 }
 
+- (NSString *) getAccessToken {
+	return [_userPrefs objectForKey:@"access_token"];
+}
+
+- (void) saveAccessToken {	
+	[_userPrefs setObject:@"ya29.AHES6ZSXTsR84rCWAHpW7eVpabEDU0RzIZeC3lZfg74v3tUf2XQmksI" forKey:@"access_token"];
+	[self saveDataToDisk];
+}
+
 -(IBAction)clearCompleted:(id)sender{
 	NSLog(@"This should clear up completed tasks");
 	
@@ -171,10 +185,10 @@
 
 
 -(IBAction)setPreferences:(id)sender{
-	NSWindowController *controller = [NSWindowController alloc];
-	[controller initWithWindow:preferencesWindow];
-	[controller showWindow:self];
-	
+	if(! [preferencesWindow isVisible])
+	{
+		[preferencesWindow makeKeyAndOrderFront:sender];
+	}
 	NSLog(@"This should open up preferences dialog");
 }
 @end
