@@ -100,7 +100,20 @@
     return [folder stringByAppendingPathComponent: fileName];
 }
 
-- (NSArray *) fetchTasks {
+- (NSArray *) fetchTasksWithRetry {
+	
+	NSDictionary *responseObj = [self fetchTasks];
+	NSObject *error = [responseObj objectForKey:@"error"];
+	BOOL isError = [error count] > 0;
+	
+	if (isError) {
+		//Fetch new access token.
+	}
+	
+	return [responseObj objectForKey:@"items"];
+}
+
+- (NSDictionary *) fetchTasks {
 	NSString *access_token = [self getAccessToken];
 	NSString *taskURLPrefix = @"https://www.googleapis.com/tasks/v1/lists/MTUzNjI2MjQ0OTYzNTc0OTE0Mjk6MDow/tasks?access_token=";
 	NSString *taskURL = [taskURLPrefix stringByAppendingString:access_token];
@@ -115,11 +128,8 @@
 	SBJsonParser *parser = [[SBJsonParser alloc] init];
 	
 	NSDictionary *responseObj = [parser objectWithString:tasksString];
-	NSObject *error = [responseObj objectForKey:@"error"];
-	BOOL isError = [error count] > 0;
 	
-	
-	return [responseObj objectForKey:@"items"];
+	return responseObj;
 }
 
 - (void) dealloc {
@@ -173,8 +183,29 @@
 	return [_userPrefs objectForKey:@"access_token"];
 }
 
+- (void) fetchNewAccessToken {
+	NSString *authURL = @"https://accounts.google.com/o/oauth2/token";
+	
+	NSURLRequest *theRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:authURL]];
+	NSURLResponse *resp = nil;
+	NSError *err = nil;
+	NSData *response = [NSURLConnection sendSynchronousRequest: theRequest returningResponse: &resp error: &err];
+	NSString * tasksString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]; 
+	
+	SBJsonParser *parser = [[SBJsonParser alloc] init];
+	
+	NSDictionary *responseObj = [parser objectWithString:tasksString];
+	
+	return responseObj;
+}
+
 - (void) saveAccessToken {	
 	[_userPrefs setObject:@"ya29.AHES6ZSXTsR84rCWAHpW7eVpabEDU0RzIZeC3lZfg74v3tUf2XQmksI" forKey:@"access_token"];
+	[self saveDataToDisk];
+}
+
+- (void) saveRefreshToken {
+	[_userPrefs setObject:@"1/vD8661wG0S2noJL80tTyoMmBgmq-GT8Gvs85J85b6Dw" forKey:@"refresh_token"];
 	[self saveDataToDisk];
 }
 
