@@ -1,3 +1,6 @@
 [submodule "Tasks/Classes/JSON"]
 	path = Tasks/Classes/JSON
 	url = git://github.com/stig/json-framework.git
+[submodule "Tasks/Classes/ASIHTTPRequest"]
+	path = Tasks/Classes/ASIHTTPRequest
+	url = git://github.com/pokeb/asi-http-request.git
