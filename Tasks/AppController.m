@@ -216,10 +216,15 @@
 
 
 -(IBAction)setPreferences:(id)sender{
-	if(! [preferencesWindow isVisible])
-	{
-		[preferencesWindow makeKeyAndOrderFront:sender];
-	}
+
+    /*
+    if (! [preferencesWindow isVisible])
+        [preferencesWindow makeKeyAndOrderFront:sender];
+*/    
+	NSWindowController *controller = [NSWindowController alloc];
+	[controller initWithWindow:preferencesWindow];
+    [controller showWindow:self];
+	
 	NSLog(@"This should open up preferences dialog");
 }
 @end
